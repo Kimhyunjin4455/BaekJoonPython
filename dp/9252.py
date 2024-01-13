@@ -47,7 +47,7 @@ for i in range(1,l1+1):
         else:
             dp[i][j] = max(dp[i-1][j], dp[i][j-1])
 
-# 문자열 계산
+# 문자열 계산 (역 추적 방식, 표를 그리면 이해하기 편함)
 row,col = l1,l2
 while True:
     if row == 0 or col == 0:
